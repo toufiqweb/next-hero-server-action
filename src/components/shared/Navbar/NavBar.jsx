@@ -1,3 +1,4 @@
+import ThemeSwitch from "@/components/ThemeSwitch/ThemeSwitch";
 import Link from "next/link";
 import React from "react";
 
@@ -19,6 +20,7 @@ const NavBar = () => {
             <Link href="/tasks">Tasks</Link>
           </li>
         </ul>
+        <ThemeSwitch />
       </header>
     </nav>
   );
