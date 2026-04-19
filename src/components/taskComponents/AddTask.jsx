@@ -1,9 +1,18 @@
 "use client";
 
 import { CirclePlus } from "@gravity-ui/icons";
-import { Button, Input, Label, Modal, Surface, TextField } from "@heroui/react";
+import {
+  Button,
+  Input,
+  Label,
+  Modal,
+  Surface,
+  TextField,
+  ListBox,
+  Select,
+} from "@heroui/react";
 
-export function AddTask({createTask}) {
+export function AddTask({ createTask }) {
   return (
     <Modal>
       <Button variant="secondary">Add Task</Button>
@@ -20,26 +29,65 @@ export function AddTask({createTask}) {
             <Modal.Body className="p-6">
               <Surface variant="default">
                 <form action={createTask} className="flex flex-col gap-4">
-                  <TextField className="w-full" name="name" type="text">
-                    <Label>Name</Label>
-                    <Input placeholder="Enter your name" />
+                  <TextField className="w-full" name="title" type="text">
+                    <Label>Title</Label>
+                    <Input placeholder="Enter task title" />
                   </TextField>
-                  <TextField className="w-full" name="email" type="email">
-                    <Label>Email</Label>
-                    <Input placeholder="Enter your email" />
+                  <TextField className="w-full" name="description" type="text">
+                    <Label>Description</Label>
+                    <Input placeholder="Enter task description" />
                   </TextField>
-                  <TextField className="w-full" name="phone" type="tel">
-                    <Label>Phone</Label>
-                    <Input placeholder="Enter your phone number" />
+                  <Select name="status" className="w-full" placeholder="Select one">
+                    <Label>Status</Label>
+                    <Select.Trigger>
+                      <Select.Value />
+                      <Select.Indicator />
+                    </Select.Trigger>
+                    <Select.Popover>
+                      <ListBox>
+                        <ListBox.Item id="pending" textValue="pending">
+                          Pending
+                          <ListBox.ItemIndicator />
+                        </ListBox.Item>
+                        <ListBox.Item id="completed" textValue="completed">
+                          Completed
+                          <ListBox.ItemIndicator />
+                        </ListBox.Item>
+                        <ListBox.Item id="progress" textValue="progress">
+                          Progress
+                          <ListBox.ItemIndicator />
+                        </ListBox.Item>
+                      </ListBox>
+                    </Select.Popover>
+                  </Select>
+                  <Select name="priority" className="w-full" placeholder="Select one">
+                    <Label>Priority</Label>
+                    <Select.Trigger>
+                      <Select.Value />
+                      <Select.Indicator />
+                    </Select.Trigger>
+                    <Select.Popover>
+                      <ListBox>
+                        <ListBox.Item id="low" textValue="low">
+                          Low
+                          <ListBox.ItemIndicator />
+                        </ListBox.Item>
+                        <ListBox.Item id="medium" textValue="medium">
+                          Medium
+                          <ListBox.ItemIndicator />
+                        </ListBox.Item>
+                        <ListBox.Item id="high" textValue="high">
+                          High
+                          <ListBox.ItemIndicator />
+                        </ListBox.Item>
+                      </ListBox>
+                    </Select.Popover>
+                  </Select>
+                  <TextField className="w-full" name="assignee">
+                    <Label>assignee</Label>
+                    <Input placeholder="Task assigned to" />
                   </TextField>
-                  <TextField className="w-full" name="company">
-                    <Label>Company</Label>
-                    <Input placeholder="Enter your company name" />
-                  </TextField>
-                  <TextField className="w-full" name="message">
-                    <Label>Message</Label>
-                    <Input placeholder="Enter your message" />
-                  </TextField>
+                  
                   <Modal.Footer>
                     <Button slot="close" variant="secondary">
                       Cancel

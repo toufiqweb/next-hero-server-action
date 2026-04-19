@@ -5,15 +5,17 @@
     "description": "Understand routing, components, and file structure",
     "status": "completed",
     "priority": "high",
-    "dueDate": "2026-04-10"
+    "dueDate": "2026-04-10",
+    "assignee": "Taj Ahmed"
   },
   {
     "id": 2,
     "title": "Build Todo App",
     "description": "Create CRUD functionality with json-server",
-    "status": "in-progress",
+    "status": "progress",
     "priority": "medium",
-    "dueDate": "2026-04-20"
+    "dueDate": "2026-04-20",
+    "assignee": "Rahim Uddin"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "description": "Use fetch and async/await in React",
     "status": "pending",
     "priority": "high",
-    "dueDate": "2026-04-22"
+    "dueDate": "2026-04-22",
+    "assignee": "Karim Hasan"
   },
   {
     "id": 4,
@@ -29,15 +32,17 @@
     "description": "Understand utility classes and responsive design",
     "status": "completed",
     "priority": "low",
-    "dueDate": "2026-04-05"
+    "dueDate": "2026-04-05",
+    "assignee": "Nusrat Jahan"
   },
   {
     "id": 5,
     "title": "Create Portfolio Website",
     "description": "Showcase projects with modern UI",
-    "status": "in-progress",
+    "status": "progress",
     "priority": "high",
-    "dueDate": "2026-04-30"
+    "dueDate": "2026-04-30",
+    "assignee": "Sakib Khan"
   },
   {
     "id": 6,
@@ -45,6 +50,7 @@
     "description": "Debug API errors and UI issues",
     "status": "pending",
     "priority": "medium",
-    "dueDate": "2026-04-25"
+    "dueDate": "2026-04-25",
+    "assignee": "Mim Akter"
   }
 ]
