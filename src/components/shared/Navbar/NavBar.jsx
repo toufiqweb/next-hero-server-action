@@ -1,4 +1,5 @@
 import ThemeSwitch from "@/components/ThemeSwitch/ThemeSwitch";
+import { ToggleTheme } from "@/components/toggleTheme/ToggleTheme";
 import Link from "next/link";
 import React from "react";
 
@@ -20,7 +21,11 @@ const NavBar = () => {
             <Link href="/tasks">Tasks</Link>
           </li>
         </ul>
-        <ThemeSwitch />
+        <div className="flex gap-5">
+         
+          <ThemeSwitch />
+          <ToggleTheme />
+        </div>
       </header>
     </nav>
   );
