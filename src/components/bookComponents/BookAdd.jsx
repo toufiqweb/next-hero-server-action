@@ -71,7 +71,7 @@ const BookAdd = ({createBook}) => {
               <Button slot="close" variant="secondary">
                 Cancel
               </Button>
-              <Button slot="close">Send Message</Button>
+              <Button type="submit">Submit</Button>
             </Modal.Footer>
           </Modal.Dialog>
         </Modal.Container>
