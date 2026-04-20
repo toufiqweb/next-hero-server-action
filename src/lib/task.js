@@ -7,5 +7,17 @@ export const getTasks = async () => {
 export const postTask = async (newTask) => {
   newTask.id = tasks.length + 1;
   tasks.push(newTask);
-  return { ok: true, massage: "Task added successfully" };
+
+  return {
+    ok: true,
+    message: "Task added successfully",
+  };
 };
+
+// export const postANewTask = async (newTask) => {
+
+//   newTask.id = tasks.length + 1 
+//   tasks.push(newTask)
+
+//   return{ok : true , massage : "New Task added successfully"}
+// }

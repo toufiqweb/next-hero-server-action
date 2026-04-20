@@ -92,7 +92,7 @@ export function AddTask({ createTask }) {
                     <Button slot="close" variant="secondary">
                       Cancel
                     </Button>
-                    <Button type="submit">Submit task</Button>
+                    <Button slot="close" type="submit">Submit task</Button>
                   </Modal.Footer>
                 </form>
               </Surface>
