@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "price": 450,
+    "category": "Self Help",
+    "status": "available",
+    "rating": 4.8,
+    "publishedYear": 2018
+  },
+  {
+    "id": 2,
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "price": 350,
+    "category": "Finance",
+    "status": "available",
+    "rating": 4.6,
+    "publishedYear": 1997
+  },
+  {
+    "id": 3,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "price": 300,
+    "category": "Fiction",
+    "status": "available",
+    "rating": 4.7,
+    "publishedYear": 1988
+  },
+  {
+    "id": 4,
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "price": 500,
+    "category": "Productivity",
+    "status": "out_of_stock",
+    "rating": 4.5,
+    "publishedYear": 2016
+  },
+  {
+    "id": 5,
+    "title": "Think and Grow Rich",
+    "author": "Napoleon Hill",
+    "price": 280,
+    "category": "Motivation",
+    "status": "available",
+    "rating": 4.4,
+    "publishedYear": 1937
+  },
+  {
+    "id": 6,
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "price": 650,
+    "category": "Programming",
+    "status": "available",
+    "rating": 4.9,
+    "publishedYear": 2008
+  },
+  {
+    "id": 7,
+    "title": "You Don't Know JS",
+    "author": "Kyle Simpson",
+    "price": 550,
+    "category": "Programming",
+    "status": "available",
+    "rating": 4.7,
+    "publishedYear": 2015
+  },
+  {
+    "id": 8,
+    "title": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "price": 400,
+    "category": "Finance",
+    "status": "available",
+    "rating": 4.8,
+    "publishedYear": 2020
+  },
+  {
+    "id": 9,
+    "title": "Zero to One",
+    "author": "Peter Thiel",
+    "price": 420,
+    "category": "Startup",
+    "status": "available",
+    "rating": 4.3,
+    "publishedYear": 2014
+  },
+  {
+    "id": 10,
+    "title": "Start with Why",
+    "author": "Simon Sinek",
+    "price": 380,
+    "category": "Leadership",
+    "status": "available",
+    "rating": 4.5,
+    "publishedYear": 2009
+  }
+]

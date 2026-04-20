@@ -15,7 +15,7 @@ const ThemeSwitch = () => {
       {({isSelected}) => (
         <>
           <Switch.Control
-            className={`h-[31px] w-[51px] bg-black ${isSelected ? "bg-white shadow-[0_0_12px_rgba(6,182,212,0.5)]" : ""}`}
+            className={`h-[31px] w-[51px] bg-black ${isSelected ? "bg-white shadow-[0_0_10px_rgba(0,0,0,0.3)]" : "shadow-[0_0_10px_rgba(255,255,255,0.4)]"}`}
           >
             <Switch.Thumb
               className={`size-[27px]  shadow-sm ${isSelected ? "ms-[22px] shadow-lg bg-black" : "bg-white"}`}

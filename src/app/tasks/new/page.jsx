@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { addANewTask } from "@/lib/actions";
 import {
   Button,
@@ -20,9 +20,9 @@ const NewTask = () => {
         <TextField
           isRequired
           validate={(value) => {
-             if (value.length < 8) {
-            return "title must be at least 8 characters";
-          }
+            if (value.length < 8) {
+              return "title must be at least 8 characters";
+            }
             return null;
           }}
           className="w-full"
@@ -33,7 +33,18 @@ const NewTask = () => {
           <Input placeholder="Enter task title" />
           <FieldError />
         </TextField>
-        <TextField className="w-full" name="description" type="text">
+        <TextField
+          isRequired
+          validate={(value) => {
+            if (value.length < 20) {
+              return "Description must be at least 20 characters";
+            }
+            return null;
+          }}
+          className="w-full"
+          name="description"
+          type="text"
+        >
           <Label>Description</Label>
           <Input placeholder="Enter task description" />
         </TextField>
